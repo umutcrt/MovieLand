@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct ContentView: View {
     
@@ -13,6 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
+            Text("No connection.").foregroundColor(.red).font(.title3).multilineTextAlignment(.center)
             NavigationView {
                 VStack {
                     ScrollView(.horizontal) {
@@ -85,7 +87,15 @@ struct ContentView: View {
                         }
                     }.listStyle(.plain)
                         .refreshable {
-                            moviesVM.getMovies()
+                            AF.request("https://api.themoviedb.org/3/movie/upcoming?api_key=c4bc339b27ebb4b0594d9c50e9100897&page=1", method: .get).responseDecodable(of:Welcome.self) { response in
+                                switch response.result {
+                                case .success(let data):
+                                    let results = data.results
+                                    moviesVM.movies += results
+                                case .failure(let error):
+                                    print(error)
+                                }
+                            }
                         }
                 }
             }

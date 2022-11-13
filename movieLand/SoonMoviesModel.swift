@@ -4,20 +4,11 @@
 import Foundation
 
 struct Welcome2: Codable {
-    let dates: Dates2
-    let page: Int
     let results: [Result2]
-    let totalPages, totalResults: Int
     
     enum CodingKeys: String, CodingKey {
-        case dates, page, results
-        case totalPages = "total_pages"
-        case totalResults = "total_results"
+        case results
     }
-}
-
-struct Dates2: Codable {
-    let maximum, minimum: String
 }
 
 struct Result2: Codable, Identifiable {

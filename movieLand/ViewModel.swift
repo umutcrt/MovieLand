@@ -13,7 +13,7 @@ class MoviesViewModel : ObservableObject {
     @Published var movies = [Result]()
     @Published var movies2 = [Result2]()
     @Published var movies3 = [Result3]()
-    @Published var movieContent = ""
+
     init() {
         getMovies()
         getSoonMovies()
