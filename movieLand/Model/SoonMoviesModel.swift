@@ -12,10 +12,11 @@ struct Welcome2: Codable {
 }
 
 struct Result2: Codable, Identifiable {
-    let backdropPath: String
+    let backdropPath: String?
     let id: Int
     let overview: String
-    let posterPath, releaseDate, title: String
+    let posterPath: String?
+    let releaseDate, title: String
     let voteAverage: Double
     
     enum CodingKeys: String, CodingKey {

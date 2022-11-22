@@ -5,17 +5,20 @@ import Foundation
 
 struct Welcome: Codable {
     let results: [Result]
+    let totalPages: Int
     
     enum CodingKeys: String, CodingKey {
         case results
+        case totalPages = "total_pages"
     }
 }
 
-struct Result: Codable, Identifiable {
-    let backdropPath: String
+struct Result: Codable, Identifiable, Hashable {
+    let backdropPath: String?
     let id: Int
     let overview: String
-    let posterPath, releaseDate, title: String
+    let posterPath: String?
+    let releaseDate, title: String
     let voteAverage: Double
     
     enum CodingKeys: String, CodingKey {

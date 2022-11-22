@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87AFF86B292C23B100CA91E0 /* ConnectionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AFF86A292C23B100CA91E0 /* ConnectionControl.swift */; };
 		87F7CD99291D917000D8CD0F /* movieLandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F7CD98291D917000D8CD0F /* movieLandApp.swift */; };
 		87F7CD9B291D917000D8CD0F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F7CD9A291D917000D8CD0F /* ContentView.swift */; };
 		87F7CD9D291D917100D8CD0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F7CD9C291D917100D8CD0F /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87AFF86A292C23B100CA91E0 /* ConnectionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionControl.swift; sourceTree = "<group>"; };
 		87F7CD95291D917000D8CD0F /* movieLand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movieLand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F7CD98291D917000D8CD0F /* movieLandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieLandApp.swift; sourceTree = "<group>"; };
 		87F7CD9A291D917000D8CD0F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				87F7CDBE2921979600D8CD0F /* Model */,
 				87F7CDBF292197C100D8CD0F /* View */,
 				87F7CDC0292197E500D8CD0F /* ViewModel */,
+				87AFF86A292C23B100CA91E0 /* ConnectionControl.swift */,
 				87F7CD9C291D917100D8CD0F /* Assets.xcassets */,
 				87F7CD9E291D917100D8CD0F /* Preview Content */,
 			);
@@ -196,6 +199,7 @@
 				87F7CDBB291F838700D8CD0F /* DetailView2.swift in Sources */,
 				87F7CD99291D917000D8CD0F /* movieLandApp.swift in Sources */,
 				87F7CDAB291D91D500D8CD0F /* ViewModel.swift in Sources */,
+				87AFF86B292C23B100CA91E0 /* ConnectionControl.swift in Sources */,
 				87F7CDB9291EA27C00D8CD0F /* MovieDetailModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,11 +333,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = movieLand/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Movie Land";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,11 +365,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = movieLand/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Movie Land";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
